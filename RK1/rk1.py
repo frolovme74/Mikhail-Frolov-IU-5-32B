@@ -1,7 +1,6 @@
 
 from dataclasses import dataclass
 from typing import List, Dict, Tuple
-from datetime import datetime
 
 @dataclass(frozen=True)
 class Catalog:
@@ -81,7 +80,6 @@ def query3_files_ending_ov_with_all_catalogs(
 
 if __name__ == "__main__":
     print("Рубежный контроль №1 — Вариант Б | Файл–Каталог")
-    print("Дата выполнения:", datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
     print()
 
     pairs = query1_file_catalog_pairs(files, cat_by_id)
