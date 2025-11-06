@@ -31,6 +31,10 @@ func main() {
 		fmt.Println("Ошибка ввода:", err)
 		return
 	}
+	if a == 0 {
+		fmt.Println("А не может быть равным нулю")
+		return
+	}
 	discriminant := b*b - 4*a*c
 	if discriminant < 0 {
 		fmt.Println("Корней нет (дискриминант < 0)")

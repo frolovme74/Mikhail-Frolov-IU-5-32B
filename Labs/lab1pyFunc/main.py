@@ -21,7 +21,9 @@ def main():
     a, b, c = input_coefficients()
     if a is None or b is None or c is None:
         return
-
+    if a == 0:
+        print("А не может быть равным нулю")
+        return
     discriminant = b * b - 4 * a * c
     if discriminant < 0:
         print("Корней нет (дискриминант < 0)")

@@ -37,7 +37,9 @@ def main():
     a, b, c = input_coefficients()
     if a is None or b is None or c is None:
         return
-
+    if a == 0:
+        print("А не может быть равным нулю")
+        return
     equation = QuadraticEquation(a, b, c)
     discriminant = b * b - 4 * a * c
     if discriminant < 0:
